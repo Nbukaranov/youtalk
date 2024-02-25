@@ -1,0 +1,351 @@
+.footer {
+    display: flex;
+    max-width: 144rem;
+    margin: 0 auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #2963A3;
+}
+
+.footer__info {
+    display: flex;
+    max-width: 120rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    margin-left: 12rem;
+    gap: 9.15rem;  
+    border-bottom: 1px solid #9D9D9D30; 
+}
+
+.footer__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 9.3rem;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 2.4rem;
+    gap: 2.2rem;
+}
+
+.footer__item {
+    list-style: none;
+}
+
+.footer__link {
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.footer__link:hover {
+    color: #03b2a5;   
+}
+
+.footer__subscription {
+    max-width: 48.6rem;
+}
+
+.footer__subscription-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #FFFFFF;
+}
+
+.footer__subscription-input {
+    width: 38.4rem;
+    font-size: 1.4rem;
+    color: #9D9D9D;
+    padding: 1.4rem 0rem 1.4rem 1.6rem;
+    border-radius: 0.4rem;
+    border: 1px solid #9D9D9D20;
+    outline:none;
+}
+
+.footer__subscription-form {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.footer__subscription-btn {
+    position:absolute;
+    background-color: #16C8BB;
+    border: none;
+    border-radius: 0.4rem;
+    right: 0;
+    cursor: pointer;
+}
+
+.footer__subscription-btn-img {
+    padding: 0.95rem 2rem;
+}
+
+.footer__subscription-word {
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 100;
+    color: #FFFFFF70;
+}
+
+.footer__social-link {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4rem;
+    gap: 1.6rem;
+}
+
+.footer__copiright {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.6rem;
+    margin-left: 12rem;
+    margin-bottom: 1.7rem;
+    gap: 4.8rem;
+}
+
+.footer__copiright-info {
+    font-size: 1.4rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #FFFFFF70;
+}
+
+#footer__label-mail {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .footer__info {
+        display: flex;
+        margin-left: 3.8rem;
+        justify-content: space-between;
+        gap: 2.1rem;  
+ 
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1266px) {
+
+     .footer__info {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 1.8rem;
+        gap: 1rem;  
+ 
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 3rem;
+    }
+
+    .footer__subscription {
+        max-width: 45rem;
+    }
+
+    .footer__copiright {
+        margin-left: 3.2rem;
+    }
+}
+
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+
+    .footer__info {
+        gap: 2.6rem;
+    }
+
+}
+
+@media screen and (min-width: 740px) and (max-width: 941px) {
+
+
+    .footer__info {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2rem;
+        gap: 3.1rem;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__subscription {
+        max-width: 40rem;   
+    }
+
+   .footer__subscription-input {
+    max-width: 30rem;
+    }
+
+}
+
+@media screen and (min-width: 591px) and (max-width: 739px) {
+    .footer__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 2rem;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer__copiright {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        gap: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 590px) {
+
+    .footer__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        gap: 2.3rem;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .footer__copiright {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        gap: 2.4rem;
+    }
+
+    .footer__subscription {
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    .footer__subscription-input {
+        margin-right: 2rem;
+        max-width: 325px; 
+    }
+
+}
+
+@media screen and (min-width: 281px) and (max-width: 375px) {
+
+    .footer__info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 1.3rem;
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        left: 0;
+    }
+
+    .footer__subscription {
+        margin-right: 2rem;
+        width: 100%;
+    }
+
+    .footer__subscription-input {
+        margin-right: 2rem;
+        max-width: 28rem; 
+    }
+
+    .footer__subscription-btn {
+        display: none;
+    }
+
+    .footer__copiright {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        gap: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 280px) {
+
+    .footer {
+        display: block;
+        width: 100%;
+    }
+
+    .footer__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-left: 0.2rem;    
+    }
+
+    .footer__nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 3rem;
+        margin-left: 1rem;
+    }
+
+    .footer__subscription {
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    .footer__subscription-input {
+        margin-right: 1rem;
+        max-width: 27rem; 
+    }
+
+    .footer__subscription-btn {
+        display: none;
+    }
+
+    .footer__copiright {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        gap: 2.4rem;
+    }
+}

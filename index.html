@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.svg">
+    <title>Youtalk | Блог о психотерапии</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="img/logo.svg" alt="Логотип компании">
+        <nav class="header__nav" aria-label="Основное меню сайта">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="#">О нас</a></li>
+                <li class="header__item"><a class="header__link" href="#">Тарифы</a></li>
+                <li class="header__item"><a class="header__link" href="#">Для бизнеса</a></li>
+                <li class="header__item"><a class="header__link" href="#">Психологам</a></li>
+                <li class="header__item"><a class="header__link" href="#">Сертификат</a></li>
+                <li class="header__item"><a class="header__link" href="#">Материалы</a></li>
+                <li class="header__item"><a class="header__link" href="#">FAQ</a></li>
+            </ul>
+        </nav>
+        <button class="header__btn">Подобрать психолога</button>
+        <button class="header__crap"><img src="./img/menu.svg" alt="Подобрать психолога"></button>
+    </header>
+
+    <main class="main">
+        <nav class="main__nav" aria-label="перейти на предыдущую страницу">
+            <ul class="main__list">
+                <li class="main__item" tabindex="-1"><a class="main__link" href="#">Главная</a></li>
+                <li class="main__item" aria-current="page" tabindex="0"><a class="main__link" href="#">Блок</a></li>
+            </ul>
+        </nav>
+
+        <section class="main__filter">
+            <h1 class="main__filter-blog">Блог</h1>
+            <nav class="main__filter-nav" aria-label="Выбор категории статей">
+                <ul class="main__filter-list">
+                    <li class="main__filter-item"><img class="main__filter-img" src="./img/SmilingFace.svg" alt="Умиляющийся смайл"><a class="main__filter-link" href="#">Все</a></li>
+                    <li class="main__filter-item"><a class="main__filter-link" href="#">Самооценка и самопринятие</a></li>
+                    <li class="main__filter-item" aria-current="page"><img class="main__filter-img" src="./img/Unicorn.svg" alt="Смайл единорог"><a class="main__filter-link" href="#">Self</a></li>
+                    <li class="main__filter-item"><a class="main__filter-link" href="#">Чувства и эмоции</a></li>
+                    <li class="main__filter-item"><a class="main__filter-link" href="#">Тревога</a></li>
+                    <li class="main__filter-item"><a class="main__filter-link" href="#">Упражнения</a></li>
+                    <li class="main__filter-item"><a class="main__filter-link" href="#">Психология питания</a></li>
+                    <li class="main__filter-item"><a class="main__filter-link" href="#">Насилие</a></li>
+                    <li class="main__filter-item"><a class="main__filter-link" href="#">Личное здоровье</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="main__big_post">
+            <a class="main__big_post-link" href="#">
+                <div class="main__big_post-article">
+                    <div class="main__big_post-categories">
+                        <p class="main__big_post-categories-name"><img class="main__big_post-ico" src="./img/Unicorn.svg" alt="Смайл единорог">Самооценка и самопринятие</p>
+                        <p class="main__big_post-categories-name"><img class="main__big_post-ico" src="./img/Unicorn.svg" alt="Смайл единорог">Self</p>
+                    </div>
+                    <img class="main__big_post-img-one" src="./img/eggs.png" alt="Яица с нарисованными лицами">
+                    <h2 class="main__big_post-title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+                    <p class="main__big_post-author">Автор: Лиза Файнтух</p>
+                    <p class="main__big_post-word">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+                    <p class="main__big_post-date">21.08.2021</p>
+                </div>
+            </a>
+
+            <a class="main__big_post-link" href="#">
+                <div class="main__big_post-article">
+                    <div class="main__big_post-categories">
+                        <p class="main__big_post-categories-name"><img class="main__big_post-ico" src="./img/Unicorn.svg" alt="Смайл единорог">Self</p>
+                    </div>
+                    <img class="main__big_post-img-two" src="./img/run.png" alt="Бегущий спортсмен">
+                    <h2 class="main__big_post-title">Как не утонуть в тревоге и управлять своими страхами</h2>
+                    <p class="main__big_post-author">Автор: Екатерина Бельтюкова</p>
+                    <p class="main__big_post-word">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                    <p class="main__big_post-date">11.08.2021</p>
+                </div>
+            </a>
+        </section>
+
+        <section class="main__small_post">
+            <a class="main__small_post-link" href="#">
+                <div class="main__small_post-article">
+                    <div class="main__small_post-categories">
+                        <p class="main__small_post-categories-name"><img class="main__small_post-ico" src="./img/Unicorn.svg" alt="Смайл единорог">Самооценка и самопринятие</p>
+                        <p class="main__small_post-categories-name"><img class="main__small_post-ico" src="./img/Unicorn.svg" alt="Смайл единорог">Психология питания</p>
+                    </div>
+                    <img class="main__small_post-img" src="./img/relax.png" alt="Отдыхающая девушка">
+                    <h2 class="main__small_post-title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+                    <p class="main__small_post-author">Автор: Лиза Файнтух</p>
+                    <p class="main__small_post-word">Изначально термин «эмоциональное профессиональной сфере и относился...</p>
+                    <p class="main__small_post-date">21.08.2021</p>
+                </div>
+            </a>
+
+            <a class="main__small_post-link" href="#">
+                <div class="main__small_post-article">
+                    <div class="main__small_post-categories">
+                        <p class="main__small_post-categories-name"><img class="main__small_post-ico" src="./img/Unicorn.svg" alt="Смайл единорог">Self</p>
+                    </div>
+                    <img class="main__small_post-img" src="./img/float.png" alt="Девушка плавает в бассейне">
+                    <h2 class="main__small_post-title">Как не утонуть в тревоге <br>и управлять своими страхами</h2>
+                    <p class="main__small_post-author">Автор: Екатерина Бельтюкова</p>
+                    <p class="main__small_post-word">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                    <p class="main__small_post-date">11.08.2021</p>
+                </div>
+            </a>    
+
+            <a class="main__small_post-link" href="#">
+                <div class="main__small_post-article">
+                    <div class="main__small_post-categories">
+                        <p class="main__small_post-categories-name"><img class="main__small_post-ico" src="./img/Unicorn.svg" alt="Смайл единорог">Self</p>
+                    </div>
+                    <img class="main__small_post-img" src="./img/anger.png" alt="Злой смайл">
+                    <h2 class="main__small_post-title">Как управлять своими эмоциями: 8 шагов</h2>
+                    <p class="main__small_post-author">Автор: Екатерина Бельтюкова</p>
+                    <p class="main__small_post-word">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+                    <p class="main__small_post-date">07.08.2021</p>
+                </div>
+            </a>
+
+            <a class="main__small_post-link" href="#">
+                <div class="main__small_post-article main__small_post-hidden">
+                    <div class="main__small_post-categories">
+                        <p class="main__small_post-categories-name"><img class="main__small_post-ico" src="./img/Unicorn.svg" alt="Смайл единорог">Self</p>
+                    </div>
+                    <img class="main__small_post-img" src="./img/work.png" alt="Женщина работает за ноутбуком">
+                    <h2 class="main__small_post-title">Эмоциональное выгорание – стадии и симптомы, методы восстановления и профилактики</h2>
+                    <p class="main__small_post-author">Автор: Лиза Файнтух под редакцией  Екатерины Бельтюковой</p>
+                    <p class="main__small_post-word">Изначально термин «эмоциональное я...</p>
+                    <p class="main__small_post-date">21.08.2021</p>
+                </div>
+            </a>    
+
+            <a class="main__small_post-link" href="#">
+                <div class="main__small_post-article main__small_post-hidden">
+                    <div class="main__small_post-categories">
+                        <p class="main__small_post-categories-name"><img class="main__small_post-ico" src="./img/Unicorn.svg" alt="Смайл единорог">Self</p>
+                    </div>
+                    <img class="main__small_post-img" src="./img/communication.png" alt="Женщина общается через ноутбук">
+                    <h2 class="main__small_post-title">Как не утонуть в тревоге <br>и управлять своими страхами</h2>
+                    <p class="main__small_post-author">Автор: Екатерина Бельтюкова</p>
+                    <p class="main__small_post-word">Один из самых важных навыков, которые может дать работа с психотерапевтом - умение в разных ситуациях по-разному обходиться ...</p>
+                    <p class="main__small_post-date">11.08.2021</p>
+                </div>
+            </a>
+
+            <a class="main__small_post-link" href="#">
+                <div class="main__small_post-article main__small_post-hidden">
+                    <div class="main__small_post-categories">
+                        <p class="main__small_post-categories-name"><img class="main__small_post-ico" src="./img/Unicorn.svg" alt="Смайл единорог">Self</p>
+                    </div>
+                    <img class="main__small_post-img" src="./img/steps.png" alt="Движение людей">
+                    <h2 class="main__small_post-title">Как управлять своими эмоциями: 8 шагов</h2>
+                    <p class="main__small_post-author">Автор: Екатерина Бельтюкова</p>
+                    <p class="main__small_post-word">Клиенты часто спрашивают, как КОНТРОЛИРОВАТЬ свои негативные эмоции. Пришло время об этом написать!</p>
+                    <p class="main__small_post-date">07.08.2021</p>
+                </div>
+            </a>
+        </section>
+
+        <section class="main__btn">
+            <button class="main__btn-load">Ещё</button>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__info">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Тарифы</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Для бизнеса</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Психологам</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">FAQ</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="#">Блог</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Вебинары</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Подкаст</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Сертификат</a></li>
+                    <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer__subscription">
+                <h2 class="footer__subscription-title">Одно письмо в неделю со свежими<br> новостями и акциями</h2>
+                <form class="footer__subscription-form" action="#">
+                    <label for="input-mail" id="footer__label-mail">Электронная почта</label>
+                        <input class="footer__subscription-input" type="text" id="input-mail" aria-labelledby="footer__label-mail" placeholder="Ваш e-mail">
+                    <button class="footer__subscription-btn" type="submit"><img class="footer__subscription-btn-img" src="./img/btn-arrow.svg" alt="Кнопка отправить"></button>
+                </form>
+                <p class="footer__subscription-word">Подписываясь, я соглашаюсь на обработку персональных данных в<br> соответствии с ФЗ РФ № 152-ФЗ «О персональных данных», а также с Политикой конфиденциальности</p>
+            </div>
+
+            <div class="footer__social">
+                <img class="footer__social-logo" src="./img/footer-logo.svg" alt="Логотип компании">
+                <div class="footer__social-link">
+                   <a class="footer__social-link-ref" href="#"><img class="footer__social-link-ico" src="./img/social/vk.svg" alt="Вконтакте"></a> 
+                   <a class="footer__social-link-ref" href="#"><img class="footer__social-link-ico" src="./img/social/tg.svg" alt="Телеграм"></a> 
+                   <a class="footer__social-link-ref" href="#"><img class="footer__social-link-ico" src="./img/social/tw.svg" alt="Твиттер"></a> 
+                   <a class="footer__social-link-ref" href="#"><img class="footer__social-link-ico" src="./img/social/dz.svg" alt="Дзен"></a> 
+                </div>
+            </div>
+        </section>
+
+        <section class="footer__copiright">
+            <p class="footer__copiright-info">©Youtalk, 2018 – 2022</p>
+            <a class="footer_copiright-link" href="#"><p class="footer__copiright-info">Юридические документы</p></a>
+            <a class="footer_copiright-link" href="#"><p class="footer__copiright-info">Способы оплаты</p></a>
+        </section>
+    </footer>
+    
+</body>
+</html>

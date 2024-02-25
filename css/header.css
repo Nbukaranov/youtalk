@@ -1,0 +1,198 @@
+.header {
+    display:flex;
+    max-width: 144rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EFF5FB;
+}
+
+.header__logo {
+    margin-left:12rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
+}
+
+.header__list {
+    display: flex;
+    margin-right: 16.4rem;
+    margin-left:4.1rem;    /*Отступ слева 41px (4.1rem), т.к. мы вставляем стрелку в дропдаун "Материалы" и даем ей отступ 10px */
+    gap:3rem;
+    list-style: none;
+    font-size: 1.4rem;
+    letter-spacing: 0.25px;
+    font-family: 'Montserrat-Medium', sans-serif;
+    cursor: pointer;
+}
+
+.header__nav ul>li>a:hover {
+    color: #03b2a5;   
+}
+
+.header__nav ul li:nth-last-child(2)::after {   /* здесь применил как псевдокласс child, так и псевдоэлемент after. Есть много способов как реализовать данную задачу, но мы придерживаемся ТЗ */
+    content: url(../img/vectordown.svg);
+    margin-left: 1rem;
+}
+
+.header__btn {
+    width: 23rem;
+    margin-right: 12rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #E3F5F5;
+    font-size: 1.6rem;
+    padding: 1.4rem 2rem 1.4rem 2rem;
+    font-weight: bold;
+    color: #03B2A5;
+    cursor: pointer;
+}
+
+.header__btn:hover {
+    background-color: #b4e8e4;
+    color: #00a89b;
+}
+
+.header__crap {
+    display:none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .header__logo {
+        margin-left: 3.2rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .header__list {
+        margin-right: 2rem;
+        margin-left: 2.2rem;     
+        gap: 1.6rem;
+    }
+
+    .header__btn {
+        margin-right: 3.2rem;
+    }
+
+    .header__crap {
+        display:none;
+    }
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+
+    .header__logo {
+        margin-left: 2rem;
+        margin-right: 63.7rem;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__crap {
+        display:inline-block;
+        background: transparent;
+        border: none;
+        margin: 18px 20px 18px 0;
+    }
+
+    .header__crap img {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (min-width: 591px) and (max-width: 739px) {
+
+    .header__logo {
+        margin: 1.9rem 27.8rem 1.9rem 2.4rem;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__crap {
+        display:inline-block;
+        background: transparent;
+        border: none;
+        margin: 16px 24px 16px 0;
+    }
+}
+
+@media screen and (min-width: 376px) and (max-width: 590px) {
+
+    .header__logo {
+        margin: 1.1rem 25.6rem 1.1rem 1.6em;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__crap {
+        display:inline-block;
+        background: transparent;
+        border: none;
+        margin: 8px 8px 8px 0;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width: 375px) {
+
+    .header__logo {
+        margin: 1.1rem 25.6rem 1.1rem 1.6em;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__crap {
+        display:inline-block;
+        background: transparent;
+        border: none;
+        margin: 8px 8px 8px 0;
+    }
+}
+
+@media screen and (max-width: 280px) {
+
+    .header__logo {
+        margin: 1.1rem 19.6rem 1.1rem 1.6em;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+
+    .header__crap {
+        display:inline-block;
+        background: transparent;
+        border: none;
+        margin: 8px 0 8px 0;
+    }
+}

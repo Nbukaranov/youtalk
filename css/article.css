@@ -1,0 +1,1235 @@
+@import url("./fonts.css");
+@import url("./header.css");
+@import url("./footer.css");
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+html {
+    font-size: 10px;
+}
+
+.grid {
+    display: grid;
+    max-width: 120rem;
+    margin: 0 auto;
+    grid-template-areas: 
+    "main sidebar";
+    grid-template-columns: 5fr 2fr;
+    gap: 22rem;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+
+.main__column {
+    grid-area: main;
+}
+
+.main__list {
+    display: flex;
+    margin-top: 1.6rem;
+    gap: 0.8rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+    cursor: pointer;
+}
+
+.main__item::after {
+    content: url(../img/arrow.svg);
+    position: relative;
+    top: 0.25rem;
+    margin-left: 0.8rem;
+}
+
+.main__item:last-child::after {
+    content: '';
+}
+
+.main__link {
+    color: rgba(51, 51, 51, 0.7);
+}
+
+.main__link:hover {
+    color: black;
+}
+
+.main__article {
+    margin-top: 5.4rem;
+}
+
+.main__article-header {
+    margin-right: 3.2rem;
+    margin-bottom: 1.6rem;
+    font-size: 4.8rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.main__aticle-author {
+    font-size: 1.4rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #494949;
+    margin-bottom: 2.4rem;
+}
+
+.main__aticle-img {
+    width: 69rem;
+}
+
+.main__article-table {
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.main__article-nav {
+    margin-top: 1.6rem;
+    max-width: 58rem;
+    text-align: left;
+}
+
+.main__article-list {
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.main__article-item {
+    list-style: none;
+    margin-bottom: 0.8rem;
+}
+
+.main__article-item::before {
+    content: url(../img/aricle/link.svg);
+    margin-right: 1rem;
+}
+
+.main__article-under-item-one {
+    list-style: none;
+    margin-top: 0.4rem;
+    margin-left: 5.2rem;
+}
+
+.main__article-under-item-two {
+    list-style: none;
+    margin-top: 0.4rem;
+    margin-left: 1.7rem;
+}
+
+.main__article-under-item-three {
+    list-style: none;
+    margin-top: 0.4rem;
+    margin-left: 1.7rem;
+}
+
+.main__article-link {
+    text-decoration: underline;
+}
+
+.main__emotions {
+    margin-top: 2.4rem;
+    max-width: 100%;
+}
+
+.main__emotions-header {
+    font-size: 2.4rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.main__emotions-tile {
+    margin-top: 1.6rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.main__emotions-quote {
+    margin-top: 4rem;
+    width: 100%;
+    background-color: #F3F7FE;
+    background-image: url(../img/aricle/quote.svg);
+    background-repeat: no-repeat;
+    background-position: 4% 12%;
+    border-radius: 1.6rem;
+}
+
+.main__emotions-quote-title {
+    padding-top: 3.4rem;
+    padding-left: 2.4rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Italic', sans-serif;
+}
+
+.main__emotions-quote-author {
+    margin-top: 0.8rem;
+    margin-left: 2.4rem;
+    padding-bottom: 2.4rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.main__struggle {
+    margin-top: 2.4rem;
+    width: 100%;
+}
+
+.main__struggle-header {
+    font-size: 2.4rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.main__struggle-tile {
+    margin-top: 1.6rem;
+    padding-left: 2.4rem;
+    padding-right: 0.8rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.main__struggle-tile::before {
+    content: url(../img/aricle/link.svg);
+    margin-right: 1rem;
+    margin-left: -2rem;
+}
+
+.main__struggle-img {
+    margin-top: 2.4rem;
+    width: 100%;
+}
+
+.main__struggle-img-title {
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #868686;
+}
+
+.main__struggle-word {
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.main__struggle-quote {
+    margin-top: 2.4rem;
+    width: 100%;
+    background-image: url(../img/aricle/bgstruggle.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.main__struggle-quote-title {
+    padding: 2.4rem 10.4rem;
+    padding-bottom: 7rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Italic', sans-serif;
+}
+
+.main__struggle-history {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.4rem;
+    gap: 2.4rem;
+}
+
+.main__struggle-history-title {
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+    line-height: 2.4rem;
+}
+
+.main__struggle-exercise {
+    margin-top: 2.4rem;
+    width: 100%;
+    background-color: #FEFAEC;
+    border-radius: 1.6rem;
+}
+
+.main__struggle-exercise-header {
+    padding-top: 2.4rem;
+    padding-left: 2.4rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.main__struggle-exercise-word {
+    padding: 0.8rem 2.4rem 2.4rem 2.4rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.main__help {
+    margin-top: 2.4rem;
+}
+
+.main__help-history {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2.4rem;
+    gap: 2.4rem;
+}
+
+.main__help-history-title {
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+    line-height: 2.4rem;
+}
+
+.main__help-exercise {
+    margin-top: 2.4rem;
+    width: 100%;
+    background-color: #FFF3EB;
+    border-radius: 1.6rem;
+}
+
+.main__help-exercise-header {
+    padding-top: 2.4rem;
+    padding-left: 2.4rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.main__help-exercise-word {
+    padding: 0.8rem 2.4rem 2.4rem 2.4rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+}
+
+.main__help-history-image {
+    margin-bottom: 2.4rem;
+}
+
+.main__help-lightning {
+    margin-top: 2.4rem;
+    margin-left: 25.6rem;
+}
+
+.help-lightning {
+    background-color: #03B2A510;
+}
+
+.main__help-nav {
+    width: 100%;
+    margin-top: 2.4rem;
+    margin-bottom: 4.8rem;
+}
+
+.main__help-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0.4rem;
+    gap: 2.8rem;
+}
+
+.main__help-link {
+    font-size: 1.4rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #2963A3;
+}
+
+.main__help-item:first-child {
+    list-style: none;
+}
+
+.aside {
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    grid-area: sidebar;
+    gap: 2.4rem;
+    width: 28.2rem;
+}
+
+.gap-bg {
+    position: absolute;
+    right: -12rem;
+    top: 220rem;
+}
+
+.aside__entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8.8rem;
+    background-color: #E6F0FD;
+    border-radius: 1.6rem;
+}
+
+.aside__entry-img {
+    position: relative;
+    margin-top: 2.4rem;
+}
+
+.aside__entry-title {
+    text-align: center;
+    margin-top: 2.4rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.aside__entry-word {
+    text-align: center;
+    margin-top: 0.8rem;
+    margin-left: 2.5rem;
+    margin-right: 2.3rem;
+    font-size: 1.4rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.aside__entry-btn {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+    background-color: #35B3A9;
+    border-radius: 0.4rem;
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #FFFFFF;
+    padding: 1.2rem 6.75rem;
+    cursor: pointer;    
+}
+
+.aside__psychologist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #DEDEDE;
+    border-radius: 1.6rem;
+}
+
+.aside__psychologist-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25rem;
+    margin-top: 2.4rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    border-bottom: 1px solid #A2A7B1;
+}
+
+.aside__psychologist-name {
+    margin-top: 2.3rem;
+    font-size: 2rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.aside__psychologist-profession {
+    font-size: 1.6rem;
+    font-family: 'Montserrat-SemiBold', sans-serif;
+}
+
+.aside__psychologist-experience {
+    font-size: 1.4rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+    color: #A2A7B1;
+    margin-bottom: 1.6rem;
+}
+
+.aside__psychologist-info {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    margin-top: 1.6rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+}
+
+.aside__psychologist-work {
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.aside__psychologist-work-list {
+    list-style: none;
+    margin-top: 0.8rem;
+}
+
+.aside__psychologist-work-item {
+    font-size: 1.4rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.aside__psychologist-work-item::before {
+    content: url(../img/aricle/link.svg);
+    margin-right: 1rem;
+}
+
+.aside__psychologist-btn {
+    margin-top: 1.6rem;
+    margin-bottom: 3.6rem;
+    background-color: #35B3A9;
+    border-radius: 0.4rem;
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #FFFFFF;
+    padding: 1.2rem 6.75rem;
+    cursor: pointer;    
+}
+
+.aside__psychologist-categories {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+    margin-left: 1.6rem;
+}
+
+.aside__psychologist-categories-name {
+    display:flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Montserrat-Medium', sans-serif;
+    background-color: #F3F4F870;
+    border-radius: 0.6rem;
+    padding: 0.3rem 0.6rem 0.3rem 0;
+}
+
+.aside__psychologist-ico {
+    display: inline-block;
+    margin-left: 0.8rem;
+    margin-right: 0.4rem;
+}
+
+.aside__gifts {
+    background-image: url(../img/aricle/bg.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 1.6rem;
+    cursor: pointer;
+}
+
+.aside__gifts-title {
+    margin-top: 6rem;
+    margin-bottom: 15.2rem;
+    font-size: 3.2rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #FFFFFF;
+}
+
+.aside__video {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-image: url(../img/aricle/videobg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    border: 1px solid #DEDEDE;
+    border-radius: 2.4rem;
+}
+
+.aside__video-title {
+    margin-top: 3.2rem;
+    margin-left: 3.2rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #2963A3;
+}
+
+.aside__video-word {
+    margin-top: 1.6rem;
+    margin-left: 3.2rem;
+    margin-right: 3.2rem;
+    font-size: 1.4rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+    color: #011632;
+}
+
+.aside__video-price {
+    margin-top: 1.6rem;
+    margin-left: 3.2rem;
+    font-size: 2.4rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.aside__video-btn {
+    margin-top: 1.6rem;
+    margin-left: 3.2rem;
+    margin-bottom: 3.2rem;
+    background-color: #35B3A9;
+    border-radius: 0.4rem;
+    border: none;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #FFFFFF;
+    padding: 1.2rem 2.3rem;
+    cursor: pointer;
+
+}
+
+.supports {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 144rem;
+    margin:  0 auto;
+    padding-bottom: 9.8rem;
+    background-image: url(../img/bgsupports.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+.supports__text {
+    margin-top: 7.2rem;
+    margin-left: 12rem;
+    width: 34.8rem;
+}
+
+.supports__header {
+    font-size: 4.8rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+.supports__title {
+    margin-top: 2.4rem;
+    font-size: 1.8rem;
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+.supports__btn {
+    margin-top: 3.2rem;
+    background-color: #16C8BB;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+    color: #FFFFFF;
+    padding: 2rem 2.4rem;
+    cursor: pointer;
+}
+
+.supports__image {
+    margin-top: 7.2rem;
+    margin-right: 7.6rem;
+    margin-left: 30.3rem;
+}
+
+.supports__bg-image {
+    margin-top: 7.2rem;
+    width: 7.3rem;
+    height: 24rem;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+.grid {
+    display: grid;
+    max-width: 120rem;
+    margin-left: 3.2rem;
+    grid-template-areas: 
+    "main sidebar";
+    grid-template-columns: 5fr 2fr;
+    gap: 2.4rem;
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.main__help-nav {
+    display:none;
+}
+
+.help-lightning {
+    margin-bottom: 7.1rem;
+}
+
+.aside {
+    display: flex;
+    position:relative;
+    flex-direction: column;
+    grid-area: sidebar;
+    gap: 2.4rem;
+    width: 22.2rem;
+}
+
+.aside__entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8.8rem;
+    background-color: #E6F0FD;
+    border-radius: 1.6rem;
+}
+
+.aside__entry-img {
+    position: relative;
+    width: 18.1rem;
+ 
+}
+
+.aside__entry-title {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.aside__entry-btn {
+    padding: 1.2rem 4.15rem; 
+}
+
+.aside__psychologist {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #DEDEDE;
+    border-radius: 1.6rem;
+}
+
+.aside__psychologist-card {
+    width: 17.4rem;
+    margin-left: 2.4rem;
+}
+
+.aside__psychologist-info {
+    display: flex;
+    flex-direction: column;
+    width: 17.4rem;
+    margin-top: 1.6rem;
+    margin-left: 2.4rem;
+    margin-right: 1.6rem;
+}
+
+.aside__psychologist-work-item {
+    margin-top: 0.8rem;
+}
+
+.aside__psychologist-btn {
+    margin-bottom: 1.7rem;
+    padding: 1.2rem 3.75rem;   
+}
+
+.aside__gifts {
+    border-radius: 1.6rem;
+}
+
+.aside__video-title {
+    margin-top: 2.4rem;
+    margin-left: 2.4rem;
+}
+
+.aside__video-word {
+    margin-left: 2.4rem;
+    margin-right: 1.2rem;
+}
+
+.aside__video-price {
+    margin-left: 2.4rem;
+}
+
+.aside__video-btn {
+    margin-left: 2.4rem;
+    margin-bottom: 2.4rem;
+}
+
+.gap-bg {
+    display: none;
+}
+
+.supports {
+    display:none;
+}
+
+}
+
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+
+    .grid {
+        display: grid;
+        width:100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        grid-template-areas: 
+        "main main"
+        "sidebar sidebar";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0.4rem;
+        border-bottom: 1px solid #DEDEDE;
+    }
+
+    .main__column {
+        width:71.4rem;
+    }
+
+    .main__aticle-img {
+        width: 100%;
+    }
+
+    .main__article-nav {
+        margin-top: 1.6rem;
+        max-width: 68rem;
+        text-align: left;
+    }
+    
+    .main__article-item:nth-child(2) {
+       display: none;
+    }
+
+    .main__article-item:nth-child(3) {
+        display: none;
+     }
+     
+    .main__article-under-item-one {
+        display:none;
+    }
+    
+    .main__article-under-item-two {
+        display:none;
+    }
+    
+    .main__article-under-item-three {
+        display:none;
+    }
+    
+    .main__article-link {
+        text-decoration: underline;
+    }
+
+    .main__help-nav {
+        display:none;
+    }
+    
+    .gap-bg {
+        display: none;
+    }
+    
+    .supports {
+        display:none;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 0.3rem;
+        margin-bottom: 5.9rem;
+        grid-area: sidebar;
+        gap: 1rem;
+        width:72.8rem;
+    }
+
+    .aside__entry, .aside__psychologist, .aside__gifts, .aside__video {
+        margin: 0;
+        width: 35.6rem;
+    }
+
+    .aside__psychologist {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #DEDEDE;
+        border-radius: 1.6rem;
+    }
+    
+    .aside__psychologist-work-item {
+        margin-top: 0.8rem;
+    }
+    
+    .aside__psychologist-btn {
+        padding: 1.2rem 7.55rem;
+    
+    }
+
+    .aside__gifts {
+        background-image: url(../img/aricle/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 80%;
+    text-align: center;
+    border-radius: 1.6rem;
+    }
+
+    .aside__gifts-title {
+        margin-top: 7.5rem;
+        margin-bottom: 14.4rem;
+        font-size: 3.2rem;
+        font-family: 'Montserrat-Bold', sans-serif;
+        color: #FFFFFF;
+
+    }
+
+    .aside__psychologist-categories {
+        left: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 591px) and (max-width: 739px) {
+    .grid {
+        display: grid;
+        width:100%;
+        margin-left: 2rem;
+        grid-template-areas: 
+        "main main"
+        "sidebar sidebar";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2.4rem;
+        border-bottom: 1px solid #DEDEDE;
+    }
+
+    .main__help-nav {
+        display:none;
+    }
+    
+    .gap-bg {
+        display: none;
+    }
+    
+    .supports {
+        display:none;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 0.3rem;
+        margin-bottom: 5.9rem;
+        grid-area: sidebar;
+        gap: 1rem;
+        width:72.8rem;
+    }
+
+    .aside__entry, .aside__psychologist, .aside__gifts, .aside__video {
+        margin: 0;
+        width: 35.6rem;
+    }
+
+    .aside__psychologist {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #DEDEDE;
+        border-radius: 1.6rem;
+    }
+    
+    .aside__psychologist-work-item {
+        margin-top: 0.8rem;
+    }
+    
+    .aside__psychologist-btn {
+        padding: 1.2rem 7.55rem;
+    
+    }
+
+    .aside__gifts {
+        background-image: url(../img/aricle/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 80%;
+    text-align: center;
+    border-radius: 1.6rem;
+    }
+
+    .aside__gifts-title {
+        margin-top: 7.5rem;
+        margin-bottom: 14.4rem;
+        font-size: 3.2rem;
+        font-family: 'Montserrat-Bold', sans-serif;
+        color: #FFFFFF;
+
+    }
+
+    .aside__psychologist-categories {
+        left: 0.6rem;
+    }
+
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 590px) {
+
+    .grid {
+        display: grid;
+        width:100%;
+        grid-template-areas: 
+        "main main"
+        "sidebar sidebar";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2.4rem;
+        border-bottom: 1px solid #DEDEDE;
+    }
+
+    .main__column {
+        width: 37.4rem;
+        justify-self: center;
+            
+    }
+    .main__aticle-img {
+        width: 100%;
+    }
+
+    .main__article-header {
+        font-size: 3.2rem;
+    }
+
+    .main__list {
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+    }
+
+    .main__article-item:nth-child(2) {
+        display: none;
+     }
+ 
+     .main__article-item:nth-child(3) {
+         display: none;
+      }
+      
+     .main__article-under-item-one {
+         display:none;
+     }
+     
+     .main__article-under-item-two {
+         display:none;
+     }
+     
+     .main__article-under-item-three {
+         display:none;
+     }
+
+    .main__struggle-history {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .main__help-history {
+        display:flex;
+        flex-direction: column; 
+    }
+
+    .main__help-nav {
+        display:none;
+    }
+
+    .main__help-lightning {
+        margin-left: 7rem;
+
+    }
+
+    .main__struggle-quote-title {
+        padding: 2rem 2rem;
+    }
+    
+    .gap-bg {
+        display: none;
+    }
+    
+    .supports {
+        display:none;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        margin-top: 0.3rem;
+        margin-bottom: 5.9rem;
+        grid-area: sidebar;
+        gap: 1rem;
+        width:38rem;
+    }
+
+    .aside__entry, .aside__psychologist, .aside__gifts, .aside__video {
+        margin: 0;
+        width: 37.6rem;
+    }
+
+    .aside__psychologist {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #DEDEDE;
+        border-radius: 1.6rem;
+    }
+    
+    .aside__psychologist-work-item {
+        margin-top: 0.8rem;
+    }
+    
+    .aside__psychologist-btn {
+        padding: 1.2rem 7.55rem;
+    
+    }
+
+    .aside__gifts {
+        background-image: url(../img/aricle/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 80%;
+    text-align: center;
+    border-radius: 1.6rem;
+    }
+
+    .aside__gifts-title {
+        margin-top: 7.5rem;
+        margin-bottom: 14.4rem;
+        font-size: 3.2rem;
+        font-family: 'Montserrat-Bold', sans-serif;
+        color: #FFFFFF;
+
+    }
+
+    .aside__psychologist-categories {
+        left: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 281px) and (max-width: 375px) {
+
+    .grid {
+        display: grid;
+        width:100%;
+        grid-template-areas: 
+        "main main"
+        "sidebar sidebar";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 2.4rem;
+        border-bottom: 1px solid #DEDEDE;
+    }
+
+    .main__column {
+        width: 35.4rem;
+        justify-self: center;
+    }
+    .main__aticle-img {
+        width: 100%;
+    }
+
+    .main__article-header {
+        font-size: 3.2rem;
+    }
+
+    .main__list {
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow:ellipsis;
+    }
+
+    .main__article-item:nth-child(2) {
+        display: none;
+     }
+ 
+     .main__article-item:nth-child(3) {
+         display: none;
+      }
+      
+     .main__article-under-item-one {
+         display:none;
+     }
+     
+     .main__article-under-item-two {
+         display:none;
+     }
+     
+     .main__article-under-item-three {
+         display:none;
+     }
+
+    .main__struggle-history {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .main__help-history {
+        display:flex;
+        flex-direction: column; 
+    }
+
+    .main__help-nav {
+        display:none;
+    }
+
+    .main__help-lightning {
+        margin-left: 7rem;
+
+    }
+
+    .main__struggle-quote-title {
+        padding: 2rem 2rem;
+    }
+    
+    .gap-bg {
+        display: none;
+    }
+    
+    .supports {
+        display:none;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.3rem;
+        margin-bottom: 5.9rem;
+        grid-area: sidebar;
+        gap: 1rem;
+        width:35.4rem;
+        justify-self: center;
+    }
+
+    .aside__entry, .aside__psychologist, .aside__gifts, .aside__video {
+        margin: 0;
+        width: 35.2rem;
+    }
+
+    .aside__psychologist {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #DEDEDE;
+        border-radius: 1.6rem;
+    }
+    
+    .aside__psychologist-work-item {
+        margin-top: 0.8rem;
+    }
+    
+    .aside__psychologist-btn {
+        padding: 1.2rem 7.55rem;
+    
+    }
+
+    .aside__gifts {
+        background-image: url(../img/aricle/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 80%;
+    text-align: center;
+    border-radius: 1.6rem;
+    }
+
+    .aside__gifts-title {
+        margin-top: 7.5rem;
+        margin-bottom: 14.4rem;
+        font-size: 3.2rem;
+        font-family: 'Montserrat-Bold', sans-serif;
+        color: #FFFFFF;
+
+    }
+
+    .aside__psychologist-categories {
+        left: 0.6rem;
+    }
+
+}
